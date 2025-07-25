@@ -1,0 +1,594 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.promotion {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  height: 40px;
+  font-size: 15px;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+.my-navbar {
+  width: 100%;
+  height: 80px;
+  padding: 0 40px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  gap: 20px;
+  border: 1px solid black;
+  position: fixed;
+  margin-top: 40px;
+  z-index: 1000;
+  background-color: white;
+}
+
+.my-navbar > a {
+  color: black;
+  text-decoration: none;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  background-color: #d6ff38;
+  height: 100%;
+  margin: 0;
+  border-right: 1px solid black;
+  font-size: 24px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.my-navbar ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin-bottom: 5px;
+}
+
+.my-navbar ul li {
+  border-right: 1px solid black;
+  width: 200px;
+  height: 75px;
+}
+
+.my-navbar ul li a {
+  color: black;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+  font-family: "Nunito", sans-serif;
+}
+
+.my-navbar ul li a:hover {
+  background-color: black;
+  color: rgb(140, 228, 16);
+}
+
+.my-navbar .log-cart {
+  margin-left: 65px;
+  display: flex;
+  align-items: center;
+}
+
+.fa-circle-user {
+  font-size: 25px;
+}
+
+.my-navbar .log-cart > a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+}
+
+.my-navbar .log-cart > a:hover {
+  color: grey;
+}
+
+.my-navbar .log-cart > a button {
+  font-family: "Nunito", sans-serif;
+}
+
+/* Here ends the header section */
+
+.main-showcase {
+  width: 100%;
+  padding-top: 150px;
+}
+
+.brand-name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand-name h1 {
+  font-size: 65px;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  letter-spacing: 5px;
+  margin: 0;
+}
+
+.brand-slogan {
+  overflow: hidden;
+  width: 0;
+  opacity: 0;
+  background-color: #d6ff38;
+  margin: 10px 0 65px;
+  animation: sloganReveal 2s ease-out forwards;
+  animation-delay: 0.5s;
+}
+
+.slogan-text {
+  display: inline-block;
+  font-size: 22px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+  white-space: nowrap;
+  padding: 0 50px;
+}
+
+@keyframes sloganReveal {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  100% {
+    width: 340px;
+    opacity: 1;
+  }
+}
+
+.gallery-container {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  height: 450px;
+}
+
+.gallery-container img {
+  width: 100%;
+  height: 100%;
+}
+
+.image-box-small {
+  height: 100%;
+  flex: 1;
+  position: relative;
+}
+
+.image-box-large {
+  height: 100%;
+  flex: 2;
+  position: relative;
+}
+
+.image-box-small::before,
+.image-box-large::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #d6ff38;
+  background: linear-gradient(180deg, rgba(214, 255, 56, 0.09) 40%, rgba(214, 255, 56, 0.4) 90%);
+  opacity: 0;
+  transition: 0.2s;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.image-box-small:hover::before,
+.image-box-large:hover::before {
+  opacity: 1;
+}
+
+.overlay-text {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 22px;
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  z-index: 10;
+  opacity: 0;
+  transition: 0.2s;
+}
+
+.image-box-small:hover .overlay-text,
+.image-box-large:hover .overlay-text {
+  opacity: 1;
+}
+
+/* Below is Starting of Grid Items */
+
+.new-collection {
+  text-align: center;
+  padding-top: 65px;
+}
+
+.new-collection > h1 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-size: 35px;
+}
+
+.drops-container {
+  /* display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px 60px; */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 60px;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 30px 0;
+}
+
+.drop-card {
+  text-align: left;
+  background-color: white;
+  transition: transform 0.3s ease;
+  overflow: hidden;
+}
+
+.drop-card:hover {
+  transform: scale(1.05);
+}
+
+.drop-card img {
+  width: 280px;
+  height: auto;
+  object-fit: cover;
+  aspect-ratio: 3 / 4;
+}
+
+.drop-card a {
+  text-decoration: none;
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  color: black;
+}
+
+.drop-card p {
+  margin: 5px 0;
+}
+
+.new-collection > a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 190px;
+  height: 45px;
+  background-color: black;
+  margin-bottom: 50px;
+  border: 2px black solid;
+  transition: 0.3s;
+  text-decoration: none;
+  color: #d6ff38;
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.new-collection > a:hover {
+  background-color: #bced53;
+  color: black;
+}
+
+.discount-promotion {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 725px;
+}
+.discount-promotion .left-discount {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background: #d6ff38;
+  background: linear-gradient(180deg, rgba(214, 255, 56, 0.04) 10%, rgba(214, 255, 56, 0.82) 66%);
+}
+
+.discount-promotion .left-discount .for-animation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: bottom-reveal 1.5s ease-out 0.5s forwards;
+}
+
+@keyframes bottom-reveal {
+  0% {
+    opacity: 0;
+    transform: translateY(200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.discount-promotion .left-discount .small-p-individ {
+  font-size: 22px;
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  letter-spacing: 3px;
+}
+
+.discount-promotion .left-discount h1 {
+  font-size: 105px;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  letter-spacing: 3px;
+}
+
+.discount-promotion .left-discount p {
+  font-size: 18px;
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+}
+
+.fa-bolt {
+  padding-bottom: 30px;
+}
+
+.discount-promotion .right-discount {
+  height: 100%;
+  width: 100%;
+  flex: 1.5;
+}
+
+.discount-promotion .right-discount img {
+  width: 100%;
+  height: 100%;
+}
+
+.discount-offer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding: 60px;
+}
+
+.discount-offer img {
+  width: 80px;
+}
+
+.discount-offer a {
+  color: black;
+  font-size: 35px;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  text-align: center;
+}
+
+.modal-top-rounded {
+  border-top-left-radius: 2.5rem !important;
+  border-top-right-radius: 2.5rem !important;
+  overflow: hidden;
+}
+
+.footer-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 260px;
+  background-color: black;
+  border-top: 1px solid black;
+  width: 100%;
+}
+
+.footer-info .left-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  height: 100%;
+  padding: 50px;
+  min-width: 300px;
+}
+
+.footer-info .left-info ul {
+  list-style: none;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-info .left-info .brand-link-li {
+  padding-bottom: 20px;
+}
+
+.footer-info .left-info .brand-link-li > a {
+  font-size: 24px;
+  text-decoration: none;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.brand-mail-li {
+  padding-bottom: 8px;
+}
+
+.brand-mail-li > a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-info .right-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  height: 100%;
+  padding: 40px;
+  gap: 150px;
+  flex-wrap: wrap;
+  background-color: white;
+}
+
+.footer-info .right-info ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  list-style: none;
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+}
+
+.footer-info .right-info ul li {
+  padding-bottom: 5px;
+}
+
+.footer-info .right-info ul p {
+  font-size: 18px;
+  font-weight: 600;
+  padding-bottom: 10px;
+  margin: 0;
+}
+
+.footer-info .right-info ul li a {
+  text-decoration: none;
+  color: black;
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+@media (max-width: 999px) {
+  .footer-info .right-info {
+    width: 100%;
+    gap: 80px;
+  }
+
+  .discount-offer {
+    gap: 30px;
+    padding: 20px;
+  }
+
+  .discount-offer a {
+    font-size: 25px;
+  }
+
+  .discount-promotion {
+    height: 600px;
+  }
+
+  .discount-promotion .left-discount {
+    flex: 1.5;
+  }
+
+  .discount-promotion .left-discount h1 {
+    font-size: 80px;
+  }
+
+  .discount-promotion .right-discount {
+    flex: 1.2;
+  }
+}
+
+@media (max-width: 699px) {
+  .drop-card img {
+    width: 200px;
+  }
+
+  .discount-promotion {
+    height: auto;
+    flex-direction: column;
+  }
+  .discount-promotion .right-discount img {
+    height: 500px;
+  }
+  .gallery-container .image-box-small {
+    display: none;
+  }
+}
+
+@media (max-width: 520px) {
+  .footer-info .left-info {
+    width: 100%;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .footer-info .right-info {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+    flex-wrap: nowrap;
+    padding: 20px;
+  }
+
+  .discount-offer {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .discount-offer a {
+    font-size: 22px;
+  }
+
+  .discount-offer img {
+    transform: rotate(90deg);
+    width: 45px;
+  }
+
+  .drops-container {
+    padding: 30px 10px 0;
+    gap: 20px;
+  }
+
+  .drop-card img {
+    width: 155px;
+  }
+  .discount-promotion .right-discount img {
+    height: 500px;
+  }
+}
