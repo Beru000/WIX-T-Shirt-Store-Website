@@ -30,11 +30,12 @@
       <div class="promotion"><span>Sale is on! 25% off sitewide using TEES25 at checkout</span></div>
       <nav class="my-navbar">
         <a href="index.html">T SHOP</a>
-        <ul>
-          <li><a href="#">New</a></li>
-          <li><a href="#">Women</a></li>
-          <li><a href="#">Men</a></li>
-
+        <div class="solving-problem-test">
+          <ul class="normal-navbar">
+            <li><a href="#">New</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">Men</a></li>
+          </ul>
           <div class="log-cart">
             <a href="#"
               ><i class="fa-solid fa-circle-user" style="color: black"></i
@@ -72,6 +73,24 @@
               </div>
             </div>
           </div>
+        </div>
+        <input type="checkbox" id="check" />
+
+        <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+
+        <ul class="hamburger-navbar">
+          <li>
+            <a href="#"
+              ><i class="fa-solid fa-circle-user" style="color: black"></i
+              ><button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#loginModal">Log In</button>
+            </a>
+          </li>
+          <li><a href="">New</a></li>
+          <li><a href="">Women</a></li>
+          <li><a href="">Men</a></li>
+          <li><a href="">Shop</a></li>
+
+          <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
         </ul>
       </nav>
       <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
@@ -227,7 +246,7 @@
       </section>
       <section class="discount-offer">
         <img src="images/right-arrow.png" alt="" />
-        <a href="">GET 10% OFF YOUR FIRST ORDER!</a>
+        <a href="#" data-bs-toggle="modal" data-bs-target="#newsletterModal">GET 10% OFF YOUR FIRST ORDER!</a>
         <img src="images/left-arrow.png" alt="" />
       </section>
     </main>
@@ -259,6 +278,42 @@
             <li><a href="">Shipping & Returns</a></li>
             <li><a href="">Payment Methods</a></li>
           </ul>
+        </div>
+      </section>
+      <section class="footer-socials">
+        <div class="footer-social-icons">
+          <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+          <a href=""><i class="fa-brands fa-youtube"></i></a>
+          <a href=""><i class="fa-brands fa-pinterest-p"></i></a>
+          <a href=""><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+        <div class="footer-copyright"><p>© 2035 by T Shop. Powered and secured by Wix</p></div>
+      </section>
+
+      <section class="chat-thingy">
+        <button class="position-fixed bottom-0 end-0 m-3" data-bs-toggle="offcanvas" data-bs-target="#chatCanvas">
+          <i class="fa-solid fa-headset"></i>
+        </button>
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="chatCanvas" style="width: 350px">
+          <div class="offcanvas-header offcanvas-mystyle">
+            <div>
+              <strong>T SHOP</strong><br />
+              <small><span class="text-success">●</span> We’ll reply as soon as we can</small>
+            </div>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+          </div>
+          <div class="offcanvas-body d-flex flex-column offcanvas-body-mystyle">
+            <div class="flex-grow-1 overflow-auto mb-3"></div>
+          </div>
+          <div class="input-group-mystyle">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Write your message..." />
+              <button class="btn" type="button">😊</button>
+              <button class="btn" type="button">📎</button>
+            </div>
+          </div>
         </div>
       </section>
 
