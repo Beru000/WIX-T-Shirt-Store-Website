@@ -19,6 +19,12 @@ html {
   position: fixed;
   width: 100%;
   z-index: 1000;
+  padding: 5px 60px;
+}
+
+.promotion > p {
+  text-align: center;
+  margin: 0;
 }
 
 .my-navbar {
@@ -144,6 +150,10 @@ html {
   margin: 10px 0 65px;
   animation: sloganReveal 2s ease-out forwards;
   animation-delay: 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
 }
 
 .slogan-text {
@@ -254,7 +264,7 @@ html {
   gap: 20px 60px;
   align-items: center;
   justify-content: center;
-  padding: 30px 30px 0;
+  padding: 30px 100px 0;
 }
 
 .drop-card {
@@ -262,6 +272,9 @@ html {
   background-color: white;
   transition: transform 0.3s ease;
   overflow: hidden;
+  flex: 0 1 calc((100% - 180px) / 4);
+  max-width: 290px;
+  min-width: 180px;
 }
 
 .drop-card:hover {
@@ -269,7 +282,7 @@ html {
 }
 
 .drop-card img {
-  width: 280px;
+  width: 100%;
   height: auto;
   object-fit: cover;
   aspect-ratio: 3 / 4;
@@ -648,19 +661,30 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  padding: 0 0 60px;
+  margin: 0;
   width: 60%;
   height: 100vh;
   position: fixed;
   z-index: 99999;
-  top: 41px;
+  top: 81px;
   right: -100%;
   opacity: 0;
   transition: all 0.6s ease-in-out;
   background-color: white;
 }
 
+.hamburger-navbar li {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .hamburger-navbar li a {
+  width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -670,11 +694,37 @@ html {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 900;
+  transition: 0.3s;
+}
+
+.hamburger-navbar li a:hover {
+  background-color: #d6ff38;
 }
 
 /* FOR MEDIA DOWN BELOW */
 
 @media (max-width: 999px) {
+  .my-navbar {
+    border: none;
+    background-color: #d6ff38;
+    margin-top: 80px;
+  }
+  .my-navbar > a {
+    border: none;
+  }
+
+  .promotion {
+    height: 80px;
+  }
+
+  .main-showcase {
+    padding-top: 190px;
+  }
+
+  .brand-name h1 {
+    margin-bottom: 20px;
+  }
+
   .my-navbar .normal-navbar {
     display: none;
   }
@@ -687,9 +737,9 @@ html {
     margin-right: 20px;
   }
 
-  .hamburger-navbar {
+  /* .hamburger-navbar {
     padding-bottom: 40px;
-  }
+  } */
   .open-menu,
   .close-menu {
     display: block;
@@ -731,11 +781,20 @@ html {
   .discount-promotion .right-discount {
     flex: 1.2;
   }
+
+  .drops-container {
+    padding: 30px 50px 0;
+  }
 }
 
 @media (max-width: 699px) {
-  .drop-card img {
-    width: 200px;
+  .drops-container {
+    padding: 30px 60px 0 !important;
+    gap: 20px 40px;
+  }
+  .drop-card {
+    min-width: 150px;
+    max-width: 200px;
   }
 
   .discount-promotion {
@@ -798,14 +857,16 @@ html {
     width: 45px;
   }
 
+  .drop-card {
+    flex: 1 1 calc(35% - 1rem);
+    min-width: 100px;
+  }
+
   .drops-container {
     padding: 30px 10px 0;
     gap: 20px;
   }
 
-  .drop-card img {
-    width: 155px;
-  }
   .discount-promotion .right-discount img {
     height: 500px;
   }

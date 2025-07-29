@@ -1,0 +1,249 @@
+/* font-family: "Poppins", sans-serif;
+  font-weight: 600;
+
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+
+  font-family: "Nunito", sans-serif;
+  font-weight: 300; */
+
+.products-header {
+  padding: 140px 60px 60px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+}
+
+.products-header > a {
+  text-decoration: none;
+  color: black;
+  margin-right: 5px;
+}
+
+.products-header i {
+  margin-right: 5px;
+}
+
+.products-header > h1 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-size: 65px;
+  margin-top: 30px;
+}
+
+.products-main {
+  padding: 0 60px 30px;
+  display: flex;
+}
+
+.products-filter {
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+}
+
+.products-filter > p {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.497);
+  padding-bottom: 15px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+  font-size: 22px;
+}
+
+.products-filter > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+.products-filter > ul li {
+  margin-bottom: 8px;
+}
+
+.products-filter > ul li a {
+  text-decoration: none;
+  color: black;
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+}
+
+.size-container {
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+}
+
+.size-container .size-span {
+  margin-right: 4rem;
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+}
+.size-container i {
+  margin-bottom: 15px;
+}
+
+.products-sorting {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.products-sorting > p {
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+}
+
+.my-sorting-button {
+  border: none;
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+}
+
+.my-dropdown-ul {
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+  width: 200px;
+  padding: 8px 10px 10px 0;
+}
+
+.products-container {
+  width: 100%;
+  padding-left: 40px;
+}
+
+.drops-container {
+  padding: 30px 0;
+}
+
+.my-offcanvas-header {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.517);
+}
+
+.my-offcanvas-header > h5 {
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.my-offcanvas-header > h5 > span {
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.my-accordion {
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+}
+
+.my-accordion button {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.517);
+  border-radius: 0;
+  font-size: 18px;
+}
+
+.my-accordion-body > div {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.my-accordion button:focus {
+  outline: none;
+  box-shadow: none;
+  background-color: transparent;
+  border-radius: 0;
+}
+
+.my-accordion button:not(.collapsed) {
+  background-color: transparent;
+  outline: none;
+}
+
+.form-check-input:checked {
+  background-color: #333;
+  border-color: #333;
+}
+
+.accordion-item,
+.accordion-button,
+.accordion-collapse,
+.accordion-body {
+  border-radius: 0 !important;
+}
+
+.my-btn-style {
+  width: 150px;
+  height: 40px;
+  margin-top: 20px;
+}
+
+.offcanvas-body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.action-button-div {
+  border-top: 1px solid rgba(128, 128, 128, 0.448);
+}
+
+.products-filter-sort-uni{
+  display: none;
+}
+
+.container>button{
+  border:none;
+  background-color: transparent;
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  border-bottom: 1px solid black;
+}
+
+@media (max-width: 999px) {
+  .products-header {
+    padding-top: 180px;
+  }
+}
+
+@media (max-width: 699px) {
+  .dropdown {
+    display: none !important;
+  }
+
+  .products-filter-sort-uni{
+  display: unset;
+}
+
+  .products-filter {
+    display: none;
+  }
+  .drops-container {
+    padding: 30px 0 !important;
+  }
+  .products-container {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 520px) {
+  .products-header > h1 {
+    font-size: 42px;
+  }
+  .products-header {
+    padding: 140px 30px 20px;
+  }
+  .products-main {
+    padding: 0 30px 30px;
+  }
+}
