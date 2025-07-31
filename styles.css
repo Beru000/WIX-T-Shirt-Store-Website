@@ -8,6 +8,19 @@ html {
   scroll-behavior: smooth;
 }
 
+main {
+  animation: html-smooth 1.5s ease-out  forwards;
+}
+
+@keyframes html-smooth {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .promotion {
   background-color: black;
   display: flex;

@@ -24,6 +24,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Nunito:wght@300&family=Poppins:wght@400;600&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="chosen-product.css" />
   </head>
   <body>
     <header id="scrolltotop">
@@ -120,105 +121,168 @@
     </header>
 
     <main>
-      <section class="main-showcase">
-        <div class="brand-name">
-          <h1>T SHOP</h1>
-          <p class="brand-slogan">
-            <span class="slogan-text">There`s One for Everyone</span>
+      <section class="chosen-main">
+        <div class="chosen-main-header">
+          <span><a href="index.html">Home /</a> <span>I`m a product</span></span>
+          <a href=""><i class="fa-solid fa-angle-left"></i> Prev | Next <i class="fa-solid fa-angle-right"></i></a>
+        </div>
+        <div class="chosen-main-body">
+          <img
+            src="https://static.wixstatic.com/media/c837a6_f8d49ec34c8a4f95890362cc7a53f89b~mv2.jpg/v1/fill/w_1160,h_840,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_f8d49ec34c8a4f95890362cc7a53f89b~mv2.jpg"
+            alt=""
+            class="big-screen-img"
+          />
+          <img
+            src="https://static.wixstatic.com/media/c837a6_f8d49ec34c8a4f95890362cc7a53f89b~mv2.jpg/v1/fill/w_592,h_788,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_f8d49ec34c8a4f95890362cc7a53f89b~mv2.jpg"
+            alt=""
+            class="small-screen-img"
+          />
+          <div>
+            <h1>I'm a product</h1>
+            <p class="sku">SKU: 0014</p>
+            <p>$15.00</p>
+            <p class="product-description">
+              I'm a product description. This is a great place to "sell" your product and grab buyers' attention. Describe your
+              <a href="">Read more</a>
+            </p>
+            <p style="margin: 0">Quantity *</p>
+            <button class="quantity-counter"><i class="fa-solid fa-minus"></i> 1 <i class="fa-solid fa-plus"></i></button>
+            <button class="add-to-cart">Add to Cart</button>
+            <button class="buy-new">Buy Now</button>
+            <div class="chosen-main-info-small-width">
+              <div>
+                <button
+                  class=""
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="false"
+                  aria-controls="collapseOne"
+                >
+                  PRODUCT INFO <i class="fa-solid fa-plus"></i>
+                </button>
+                <div class="collapse mb-3" id="collapseOne">
+                  <div class="card-body">
+                    I'm a product detail. I'm a great place to add more information about your product such as sizing, material, care and cleaning
+                    instructions. This is also a great space to write what makes this product special and how your customers can benefit from this
+                    item. Buyers like to know what they’re getting before they purchase, so give them as much information as possible so they can buy
+                    with confidence and certainty.
+                  </div>
+                </div>
+              </div>
+              <div>
+                <button
+                  class=""
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  RETURN & REFUND POLICY <i class="fa-solid fa-plus"></i>
+                </button>
+                <div class="collapse mb-3" id="collapseTwo">
+                  <div class="card-body">
+                    I’m a Return and Refund policy. I’m a great place to let your customers know what to do in case they are dissatisfied with their
+                    purchase. Having a straightforward refund or exchange policy is a great way to build trust and reassure your customers that they
+                    can buy with confidence.
+                  </div>
+                </div>
+              </div>
+
+              <div class="shipping-info-button">
+                <button
+                  class=""
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  SHIPPING INFO <i class="fa-solid fa-plus"></i>
+                </button>
+                <div class="collapse" id="collapseThree">
+                  <div class="card-body">
+                    I'm a shipping policy. I'm a great place to add more information about your shipping methods, packaging and cost. Providing
+                    straightforward information about your shipping policy is a great way to build trust and reassure your customers that they can buy
+                    from you with confidence.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-social-icons">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-pinterest"></i>
+              <i class="fa-brands fa-whatsapp"></i>
+              <i class="fa-brands fa-x-twitter"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="chosen-main-info">
+        <div>
+          <h6>PRODUCT INFO</h6>
+          <p>
+            I'm a product detail. I'm a great place to add more information about your product such as sizing, material, care and cleaning
+            instructions. This is also a great space to write what makes this product special and how your customers can benefit from this item.
+            Buyers like to know what they’re getting before they purchase, so give them as much information as possible so they can buy with
+            confidence and certainty.
           </p>
         </div>
-        <div class="gallery-container">
-          <div class="image-box-small">
-            <a href="products.html"><img src="images/main-left-img.png" alt="Left Image" /></a>
-            <div class="overlay-text">Shop Women</div>
-          </div>
-          <div class="image-box-large">
-            <a href="products.html"><img src="images/main-middle-img.png" alt="Center Image" /></a>
-            <div class="overlay-text">Shop New</div>
-          </div>
-          <div class="image-box-small">
-            <a href="products.html"><img src="images/main-right-img.png" alt="Right Image" /></a>
-            <div class="overlay-text">Shop Men</div>
-          </div>
+        <div class="info-border">
+          <h6>RETURN & REFUND POLICY</h6>
+          <p>
+            I’m a Return and Refund policy. I’m a great place to let your customers know what to do in case they are dissatisfied with their purchase.
+            Having a straightforward refund or exchange policy is a great way to build trust and reassure your customers that they can buy with
+            confidence.
+          </p>
+        </div>
+        <div class="">
+          <h6>SHIPPING INFO</h6>
+          <p>
+            I'm a shipping policy. I'm a great place to add more information about your shipping methods, packaging and cost. Providing
+            straightforward information about your shipping policy is a great way to build trust and reassure your customers that they can buy from
+            you with confidence.
+          </p>
         </div>
       </section>
-      <section class="new-collection">
-        <h1>New Drops</h1>
-        <div class="drops-container">
-          <div class="drop-card">
-            <a href="chosen_product.html">
+      <section class="chosen-main-footer">
+        <h1>You Migh Also Like</h1>
+        <div class="drops-container-new">
+          <div class="drop-card-new">
+            <a href="chosen_porduct.html">
               <img
-                src="https://static.wixstatic.com/media/c837a6_f8d49ec34c8a4f95890362cc7a53f89b~mv2.jpg/v1/fill/w_588,h_784,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_f8d49ec34c8a4f95890362cc7a53f89b~mv2.jpg"
+                src="https://static.wixstatic.com/media/c837a6_2308b08ad22c4e4aa919906536a1b5d1~mv2.jpg/v1/fill/w_582,h_776,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_2308b08ad22c4e4aa919906536a1b5d1~mv2.jpg"
                 alt=""
               />
               <p>I'm a product</p>
               <p>$15.00</p>
             </a>
           </div>
-          <div class="drop-card">
-            <a href="chosen_product.html">
+          <div class="drop-card-new">
+            <a href="chosen_porduct.html">
               <img
-                src="https://static.wixstatic.com/media/c837a6_8ea5cc0a06664ef6a3c1cf64e1cb5a27~mv2.jpg/v1/fill/w_588,h_784,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_8ea5cc0a06664ef6a3c1cf64e1cb5a27~mv2.jpg"
+                src="https://static.wixstatic.com/media/c837a6_ce32dd298b274ba280efa267e075be21~mv2.jpg/v1/fill/w_582,h_776,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_ce32dd298b274ba280efa267e075be21~mv2.jpg"
                 alt=""
               />
               <p>I'm a product</p>
               <p>$15.00</p>
             </a>
           </div>
-          <div class="drop-card">
-            <a href="chosen_product.html">
+          <div class="drop-card-new">
+            <a href="chosen_porduct.html">
               <img
-                src="https://static.wixstatic.com/media/c837a6_ce32dd298b274ba280efa267e075be21~mv2.jpg/v1/fill/w_588,h_784,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_ce32dd298b274ba280efa267e075be21~mv2.jpg"
+                src="https://static.wixstatic.com/media/c837a6_944cb31b5c7d4659b7a0c6612b4df573~mv2.jpg/v1/fill/w_582,h_776,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_944cb31b5c7d4659b7a0c6612b4df573~mv2.jpg"
                 alt=""
               />
               <p>I'm a product</p>
               <p>$15.00</p>
             </a>
           </div>
-          <div class="drop-card">
-            <a href="chosen_product.html">
+          <div class="drop-card-new">
+            <a href="chosen_porduct.html">
               <img
-                src="https://static.wixstatic.com/media/c837a6_2308b08ad22c4e4aa919906536a1b5d1~mv2.jpg/v1/fill/w_588,h_784,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_2308b08ad22c4e4aa919906536a1b5d1~mv2.jpg"
-                alt=""
-              />
-              <p>I'm a product</p>
-              <p>$15.00</p>
-            </a>
-          </div>
-          <div class="drop-card">
-            <a href="chosen_product.html">
-              <img
-                src="https://static.wixstatic.com/media/c837a6_944cb31b5c7d4659b7a0c6612b4df573~mv2.jpg/v1/fill/w_588,h_784,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_944cb31b5c7d4659b7a0c6612b4df573~mv2.jpg"
-                alt=""
-              />
-              <p>I'm a product</p>
-              <p>$15.00</p>
-            </a>
-          </div>
-          <div class="drop-card">
-            <a href="chosen_product.html">
-              <img
-                src="https://static.wixstatic.com/media/c837a6_6a83893e75e048b3a61c7a8711b93da3~mv2.jpg/v1/fill/w_588,h_784,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_6a83893e75e048b3a61c7a8711b93da3~mv2.jpg"
-                alt=""
-              />
-              <p>I'm a product</p>
-              <p>$15.00</p>
-            </a>
-          </div>
-          <div class="drop-card">
-            <a href="chosen_product.html">
-              <img
-                src="https://static.wixstatic.com/media/c837a6_fd300737ecf3406b83fd9be5d67463e4~mv2.jpg/v1/fill/w_588,h_784,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_fd300737ecf3406b83fd9be5d67463e4~mv2.jpg"
-                alt=""
-              />
-              <p>I'm a product</p>
-              <p>$15.00</p>
-            </a>
-          </div>
-          <div class="drop-card">
-            <a href="chosen_product.html">
-              <img
-                src="https://static.wixstatic.com/media/c837a6_0ab9ff5bbc6f41a5b2dffae389cfb2b7~mv2.jpg/v1/fill/w_588,h_784,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_0ab9ff5bbc6f41a5b2dffae389cfb2b7~mv2.jpg"
+                src="https://static.wixstatic.com/media/c837a6_8558a07ad8084a9cb9de58022d440527~mv2.jpg/v1/fill/w_582,h_776,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_8558a07ad8084a9cb9de58022d440527~mv2.jpg"
                 alt=""
               />
               <p>I'm a product</p>
@@ -226,30 +290,9 @@
             </a>
           </div>
         </div>
-        <a href="products.html">Shop Now</a>
-      </section>
-      <section class="discount-promotion">
-        <div class="left-discount">
-          <div class="for-animation">
-            <i class="fa-solid fa-bolt fa-3x"></i>
-            <p class="small-p-individ">SALE IS ON!</p>
-            <h1>25% OFF</h1>
-            <p>25% off sitewide using TEES25 at checkout</p>
-          </div>
-        </div>
-        <div class="right-discount">
-          <img
-            src="https://static.wixstatic.com/media/c837a6_2749f733af59407699862291aaef4b44~mv2.jpg/v1/fill/w_773,h_888,al_c,q_85,enc_avif,quality_auto/c837a6_2749f733af59407699862291aaef4b44~mv2.jpg"
-            alt=""
-          />
-        </div>
-      </section>
-      <section class="discount-offer">
-        <img src="images/right-arrow.png" alt="" />
-        <a href="#" data-bs-toggle="modal" data-bs-target="#newsletterModal">GET 10% OFF YOUR FIRST ORDER!</a>
-        <img src="images/left-arrow.png" alt="" />
       </section>
     </main>
+
     <footer>
       <section class="footer-info">
         <div class="left-info">
